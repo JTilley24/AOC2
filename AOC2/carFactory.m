@@ -12,7 +12,7 @@
 
 +(baseCar *)createNewCar: (int)carType
 {
-
+    return [[chevyCar alloc] init];
 }
 
 @end

@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface baseCar : NSObject
-
+{
+    int carEnum;
+}
 typedef enum {
     CHEVY,
     FORD,

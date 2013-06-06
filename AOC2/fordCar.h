@@ -9,5 +9,16 @@
 #import "baseCar.h"
 
 @interface fordCar : baseCar
+{
+    int transGear;
+}
+typedef enum{
+    AUTO=4,
+    MANUAL
+}transGear;
+
+@property int gearRatio;
+@property int transType;
+@property int topSpeed;
 
 @end

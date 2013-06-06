@@ -10,4 +10,9 @@
 
 @interface chevyCar : baseCar
 
+@property int exhaustPipes;
+@property int exhaustDiameter;
+
+-(void)horsePowerRating;
+
 @end
