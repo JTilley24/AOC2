@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  chevyCar.h
 //  AOC2
@@ -20,6 +22,7 @@ typedef enum {
     DUAL
 }exhuastType;
 
+//Data members for number of Exhaust pipes, Diameter of pipes, and Sound
 @property int exhaustPipes;
 @property int exhaustDiameter;
 @property NSString *exhaustSound;

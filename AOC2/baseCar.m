@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  baseCar.m
 //  AOC2
@@ -24,6 +26,7 @@
     return self;
 }
 
+//Calculation method for Horsepower Rating
 -(void)horsePowerRating
 {
     [self setHorsePower:(self.engineSize - ([self.carModel length] * 10))];

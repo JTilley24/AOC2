@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  fordCar.h
 //  AOC2
@@ -17,6 +19,7 @@ typedef enum{
     MANUAL
 }transGear;
 
+//Data members for Gear Ratio and Transmission for Top Speed
 @property int gearRatio;
 @property int transType;
 @property int topSpeed;

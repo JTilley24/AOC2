@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  chevyCar.m
 //  AOC2
@@ -25,6 +27,7 @@
     return self;
 };
 
+//Override of calculation
 -(void)horsePowerRating
 {
     [self setHorsePower:((exhaustPipes + exhaustDiameter) * 50)];

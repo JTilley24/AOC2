@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  fordCar.m
 //  AOC2
@@ -24,6 +26,7 @@
     return self;
 };
 
+//Override of calculation
 -(void)horsePowerRating
 {
     if(transType == AUTO){
@@ -37,7 +40,6 @@
     else{
         NSLog(@"You have no transmission.");
     }
-    
 }
 
 @end

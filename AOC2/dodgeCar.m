@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  dodgeCar.m
 //  AOC2
@@ -24,6 +26,7 @@
     return self;
 }
 
+//Override of calculation
 -(void)horsePowerRating
 {
         if([carEdition length] == 2)
@@ -36,7 +39,6 @@
         }else{
             NSLog(@"Not a valid car edition.");
         }
-        
 }
 
 @end

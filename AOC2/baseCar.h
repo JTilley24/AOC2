@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  baseCar.h
 //  AOC2
@@ -18,6 +20,7 @@ typedef enum {
     DODGE
 } carEnum;
 
+//Data members for Model, Engine Size, and Horsepower
 @property NSString *carModel;
 @property int engineSize;
 @property int horsePower;

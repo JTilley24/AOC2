@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  carFactory.m
 //  AOC2
@@ -23,7 +25,6 @@
         return [[dodgeCar alloc] init];
     }
     else return nil;
-    
 }
 
 @end

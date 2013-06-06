@@ -1,3 +1,5 @@
+//Justin Tilley
+//AOC2 Project 1
 //
 //  dodgeCar.h
 //  AOC2
@@ -10,6 +12,7 @@
 
 @interface dodgeCar : baseCar
 
+//Data members for Spark Plus and Edition of car for Torque rating
 @property int sparkPlugs;
 @property NSString *carEdition;
 @property int torquePounds;
