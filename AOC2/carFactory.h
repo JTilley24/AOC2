@@ -14,4 +14,6 @@
 
 @interface carFactory : NSObject
 
++(baseCar *)createNewCar: (int)carType;
+
 @end

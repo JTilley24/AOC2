@@ -10,4 +10,18 @@
 
 @interface baseCar : NSObject
 
+typedef enum {
+    CHEVY,
+    FORD,
+    DODGE
+} carEnum;
+
+@property NSString *carModel;
+@property int engineSize;
+@property int horsePower;
+
+-(id)init;
+
+-(void)horsePowerRating;
+
 @end

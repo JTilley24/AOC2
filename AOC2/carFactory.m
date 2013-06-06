@@ -10,4 +10,9 @@
 
 @implementation carFactory
 
++(baseCar *)createNewCar: (int)carType
+{
+
+}
+
 @end
