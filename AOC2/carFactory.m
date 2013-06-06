@@ -12,7 +12,18 @@
 
 +(baseCar *)createNewCar: (int)carType
 {
-    return [[chevyCar alloc] init];
+    if(carType == CHEVY)
+    {
+        return [[chevyCar alloc] init];
+    }else if(carType == FORD)
+    {
+        return [[fordCar alloc] init];
+    }else if(carType == DODGE)
+    {
+        return [[dodgeCar alloc] init];
+    }
+    else return nil;
+    
 }
 
 @end

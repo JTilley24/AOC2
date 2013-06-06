@@ -9,9 +9,18 @@
 #import "baseCar.h"
 
 @interface chevyCar : baseCar
+{
+    int exhaustType;
+}
+
+typedef enum {
+    SINGLE = 1,
+    DUAL
+}exhuastType;
 
 @property int exhaustPipes;
 @property int exhaustDiameter;
+
 
 -(void)horsePowerRating;
 

@@ -37,7 +37,7 @@
     else{
         NSLog(@"You have no transmission.");
     }
-    NSLog(@"The top speed is %d", self.topSpeed);
+    
 }
 
 @end

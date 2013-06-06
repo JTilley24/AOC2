@@ -17,8 +17,8 @@
     self = [super init];
     if(self != nil)
     {
-        [self setHorsePower:245];
-        [self setExhaustPipes:2];
+        [self setHorsePower:0];
+        [self setExhaustPipes:DUAL];
         [self setExhaustDiameter:3];
     }
     return self;
@@ -27,9 +27,15 @@
 -(void)horsePowerRating
 {
     [self setHorsePower:((exhaustPipes * exhaustDiameter) * 50)];
-    NSLog(@"The horsepower is %d", self.horsePower);
-    
-    
+    if(exhaustPipes == SINGLE)
+    {
+        NSLog(@"The single exhaust is quiet.");
+    }else if(exhaustPipes == DUAL)
+    {
+        NSLog(@"The dual exhaust is loud.");
+    }else{
+        NSLog(@"Not a valid exhaust.");
+    }
 }
 
 @end

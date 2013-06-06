@@ -10,4 +10,10 @@
 
 @interface dodgeCar : baseCar
 
+@property int sparkPlugs;
+@property NSString *carEdition;
+@property int torquePounds;
+
+-(void)horsePowerRating;
+
 @end
