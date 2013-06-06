@@ -10,5 +10,12 @@
 #import "carFactory.h"
 
 @interface ViewController : UIViewController
-
+{
+    UILabel *chevyLabel1;
+    UILabel *chevyLabel2;
+    UILabel *fordLabel1;
+    UILabel *fordLabel2;
+    UILabel *dodgeLabel1;
+    UILabel *dodgeLabel2;
+}
 @end

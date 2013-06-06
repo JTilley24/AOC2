@@ -8,9 +8,10 @@
 
 #import "chevyCar.h"
 
+
 @implementation chevyCar
 
-@synthesize exhaustPipes, exhaustDiameter;
+@synthesize exhaustPipes, exhaustDiameter, exhaustSound;
 
 -(id)init
 {
@@ -19,22 +20,22 @@
     {
         [self setHorsePower:0];
         [self setExhaustPipes:DUAL];
-        [self setExhaustDiameter:3];
+        [self setExhaustDiameter:4];
     }
     return self;
 };
 
 -(void)horsePowerRating
 {
-    [self setHorsePower:((exhaustPipes * exhaustDiameter) * 50)];
+    [self setHorsePower:((exhaustPipes + exhaustDiameter) * 50)];
     if(exhaustPipes == SINGLE)
     {
-        NSLog(@"The single exhaust is quiet.");
+       self.exhaustSound = [[NSString alloc] initWithFormat:@"The single exhaust of the car is quiet."];
     }else if(exhaustPipes == DUAL)
     {
-        NSLog(@"The dual exhaust is loud.");
+       self.exhaustSound = [[NSString alloc] initWithFormat:@"The dual exhaust of the car is loud."];
     }else{
-        NSLog(@"Not a valid exhaust.");
+        self.exhaustSound = [[NSString alloc] initWithFormat:@"Not a valid exhaust."];
     }
 }
 

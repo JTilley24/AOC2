@@ -26,6 +26,7 @@
 
 -(void)horsePowerRating
 {
+    [self setHorsePower:(self.engineSize - ([self.carModel length] * 10))];
     NSLog(@"Horsepower = %d", horsePower);
 }
 

@@ -7,9 +7,11 @@
 //
 
 #import "baseCar.h"
+#import "ViewController.h"
 
 @interface chevyCar : baseCar
 {
+    NSString *chevyResult2;
     int exhaustType;
 }
 
@@ -20,6 +22,7 @@ typedef enum {
 
 @property int exhaustPipes;
 @property int exhaustDiameter;
+@property NSString *exhaustSound;
 
 
 -(void)horsePowerRating;
