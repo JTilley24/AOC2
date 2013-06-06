@@ -18,6 +18,11 @@
 		CBE477CF17601F1900B4760D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CBE477CE17601F1900B4760D /* Default-568h@2x.png */; };
 		CBE477D217601F1900B4760D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477D117601F1900B4760D /* ViewController.m */; };
 		CBE477D517601F1900B4760D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBE477D317601F1900B4760D /* ViewController.xib */; };
+		CBE477E01760247600B4760D /* baseCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477DF1760247600B4760D /* baseCar.m */; };
+		CBE477E31760248700B4760D /* chevyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477E21760248700B4760D /* chevyCar.m */; };
+		CBE477E61760249000B4760D /* fordCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477E51760249000B4760D /* fordCar.m */; };
+		CBE477E91760249900B4760D /* dodgeCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477E81760249900B4760D /* dodgeCar.m */; };
+		CBE477EC176024B400B4760D /* carFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE477EB176024B400B4760D /* carFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,16 @@
 		CBE477D017601F1900B4760D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CBE477D117601F1900B4760D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CBE477D417601F1900B4760D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CBE477DE1760247600B4760D /* baseCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseCar.h; sourceTree = "<group>"; };
+		CBE477DF1760247600B4760D /* baseCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseCar.m; sourceTree = "<group>"; };
+		CBE477E11760248700B4760D /* chevyCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chevyCar.h; sourceTree = "<group>"; };
+		CBE477E21760248700B4760D /* chevyCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chevyCar.m; sourceTree = "<group>"; };
+		CBE477E41760249000B4760D /* fordCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fordCar.h; sourceTree = "<group>"; };
+		CBE477E51760249000B4760D /* fordCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fordCar.m; sourceTree = "<group>"; };
+		CBE477E71760249900B4760D /* dodgeCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dodgeCar.h; sourceTree = "<group>"; };
+		CBE477E81760249900B4760D /* dodgeCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dodgeCar.m; sourceTree = "<group>"; };
+		CBE477EA176024B400B4760D /* carFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carFactory.h; sourceTree = "<group>"; };
+		CBE477EB176024B400B4760D /* carFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +104,16 @@
 				CBE477D117601F1900B4760D /* ViewController.m */,
 				CBE477D317601F1900B4760D /* ViewController.xib */,
 				CBE477BF17601F1900B4760D /* Supporting Files */,
+				CBE477EA176024B400B4760D /* carFactory.h */,
+				CBE477EB176024B400B4760D /* carFactory.m */,
+				CBE477DE1760247600B4760D /* baseCar.h */,
+				CBE477DF1760247600B4760D /* baseCar.m */,
+				CBE477E11760248700B4760D /* chevyCar.h */,
+				CBE477E21760248700B4760D /* chevyCar.m */,
+				CBE477E41760249000B4760D /* fordCar.h */,
+				CBE477E51760249000B4760D /* fordCar.m */,
+				CBE477E71760249900B4760D /* dodgeCar.h */,
+				CBE477E81760249900B4760D /* dodgeCar.m */,
 			);
 			path = AOC2;
 			sourceTree = "<group>";
@@ -176,6 +201,11 @@
 				CBE477C517601F1900B4760D /* main.m in Sources */,
 				CBE477C917601F1900B4760D /* AppDelegate.m in Sources */,
 				CBE477D217601F1900B4760D /* ViewController.m in Sources */,
+				CBE477E01760247600B4760D /* baseCar.m in Sources */,
+				CBE477E31760248700B4760D /* chevyCar.m in Sources */,
+				CBE477E61760249000B4760D /* fordCar.m in Sources */,
+				CBE477E91760249900B4760D /* dodgeCar.m in Sources */,
+				CBE477EC176024B400B4760D /* carFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +326,7 @@
 				CBE477DA17601F1900B4760D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
