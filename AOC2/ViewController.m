@@ -42,25 +42,46 @@
     UIButton *button = (UIButton*)sender;
     if(button.tag == 0)
     {
-        NSLog(@"You pressed CHEVY");
+        textOutput.text = @"Chevy";
         chevyButton.enabled = false;
         fordButton.enabled = true;
         dodgeButton.enabled = true;
     }else if(button.tag == 1)
     {
-        NSLog(@"You pressed FORD");
+        textOutput.text = @"Ford";
         fordButton.enabled = false;
         chevyButton.enabled = true;
         dodgeButton.enabled = true;
     }else if(button.tag == 2)
     {
-        NSLog(@"You pressed DODGE");
+        textOutput.text = @"Dodge";
         dodgeButton.enabled = false;
         chevyButton.enabled = true;
         fordButton.enabled = true;
     }else
     {
     
+    }
+}
+
+-(IBAction)onChange:(id)sender
+{
+    backgroundSegment = (UISegmentedControl*)sender;
+    if(backgroundSegment != nil)
+    {
+        int colorIndex = backgroundSegment.selectedSegmentIndex;
+        if(colorIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        }else if(colorIndex == 1)
+        {
+            self.view.backgroundColor = [UIColor orangeColor];
+        }else if(colorIndex == 2)
+        {
+            self.view.backgroundColor = [UIColor redColor];
+        }
+
+             
     }
 }
 

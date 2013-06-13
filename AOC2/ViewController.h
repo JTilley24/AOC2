@@ -13,9 +13,12 @@
     IBOutlet UIButton *chevyButton;
     IBOutlet UIButton *fordButton;
     IBOutlet UIButton *dodgeButton;
+    IBOutlet UITextField *textOutput;
+    IBOutlet UISegmentedControl *backgroundSegment;
 }
 
 -(IBAction)onOpen:(id)sender;
 -(IBAction)onClick:(id)sender;
+-(IBAction)onChange:(id)sender;
 
 @end
