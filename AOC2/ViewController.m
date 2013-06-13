@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad
 {
+        
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -42,10 +43,24 @@
     UIButton *button = (UIButton*)sender;
     if(button.tag == 0)
     {
-        textOutput.text = @"Chevy";
+        ChevyCar *camaroCar = (ChevyCar*)[CarFactory createNewCar:CHEVY];
+        [camaroCar setExhaustPipes:2];
+        
+        if(camaroCar != nil)
+        {
+            [camaroCar setEngineSize:350];
+            [camaroCar setCarModel:@"Camaro"];
+            [camaroCar horsePowerRating];
+        }
+        multiplier =  1;
+        carMake = @"Chevy";
+        textResults = [[NSString alloc] initWithFormat:@"%d %@ cars", multiplier, carMake];
+        textOutput.text = textResults;
         chevyButton.enabled = false;
         fordButton.enabled = true;
         dodgeButton.enabled = true;
+        
+        
     }else if(button.tag == 1)
     {
         textOutput.text = @"Ford";
@@ -83,6 +98,18 @@
 
              
     }
+}
+
+-(IBAction)onStep:(id)sender
+{
+    stepper = (UIStepper*)sender;
+    if(stepper != nil)
+    {
+        multiplier = stepper.value;
+        textResults = [[NSString alloc] initWithFormat:@"%d %@ cars", multiplier, carMake];
+        textOutput.text = textResults;
+    }
+
 }
 
 @end

@@ -20,6 +20,11 @@
 		CB4E836417695847002F75F8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836217695847002F75F8 /* ViewController.xib */; };
 		CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836A17695C66002F75F8 /* SecondView.xib */; };
 		CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E836D17695CCF002F75F8 /* SecondViewController.m */; };
+		CBB262F4176A4CBD00D3F792 /* CarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262F3176A4CBD00D3F792 /* CarFactory.m */; };
+		CBB262F7176A4CFF00D3F792 /* BaseCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262F6176A4CFF00D3F792 /* BaseCar.m */; };
+		CBB262FD176A4E8700D3F792 /* ChevyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FC176A4E8700D3F792 /* ChevyCar.m */; };
+		CBB26300176A4EC900D3F792 /* FordCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FF176A4EC800D3F792 /* FordCar.m */; };
+		CBB26303176A4F1800D3F792 /* DodgeCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB26302176A4F1800D3F792 /* DodgeCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,16 @@
 		CB4E836A17695C66002F75F8 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
 		CB4E836C17695CCF002F75F8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		CB4E836D17695CCF002F75F8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CBB262F2176A4CBD00D3F792 /* CarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarFactory.h; sourceTree = "<group>"; };
+		CBB262F3176A4CBD00D3F792 /* CarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarFactory.m; sourceTree = "<group>"; };
+		CBB262F5176A4CFF00D3F792 /* BaseCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCar.h; sourceTree = "<group>"; };
+		CBB262F6176A4CFF00D3F792 /* BaseCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCar.m; sourceTree = "<group>"; };
+		CBB262FB176A4E8700D3F792 /* ChevyCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChevyCar.h; sourceTree = "<group>"; };
+		CBB262FC176A4E8700D3F792 /* ChevyCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChevyCar.m; sourceTree = "<group>"; };
+		CBB262FE176A4EC800D3F792 /* FordCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FordCar.h; sourceTree = "<group>"; };
+		CBB262FF176A4EC800D3F792 /* FordCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FordCar.m; sourceTree = "<group>"; };
+		CBB26301176A4F1800D3F792 /* DodgeCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DodgeCar.h; sourceTree = "<group>"; };
+		CBB26302176A4F1800D3F792 /* DodgeCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DodgeCar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +112,16 @@
 				CB4E836A17695C66002F75F8 /* SecondView.xib */,
 				CB4E836C17695CCF002F75F8 /* SecondViewController.h */,
 				CB4E836D17695CCF002F75F8 /* SecondViewController.m */,
+				CBB262F2176A4CBD00D3F792 /* CarFactory.h */,
+				CBB262F3176A4CBD00D3F792 /* CarFactory.m */,
+				CBB262F5176A4CFF00D3F792 /* BaseCar.h */,
+				CBB262F6176A4CFF00D3F792 /* BaseCar.m */,
+				CBB262FB176A4E8700D3F792 /* ChevyCar.h */,
+				CBB262FC176A4E8700D3F792 /* ChevyCar.m */,
+				CBB262FE176A4EC800D3F792 /* FordCar.h */,
+				CBB262FF176A4EC800D3F792 /* FordCar.m */,
+				CBB26301176A4F1800D3F792 /* DodgeCar.h */,
+				CBB26302176A4F1800D3F792 /* DodgeCar.m */,
 			);
 			path = AOC2;
 			sourceTree = "<group>";
@@ -186,6 +211,11 @@
 				CB4E835817695847002F75F8 /* AppDelegate.m in Sources */,
 				CB4E836117695847002F75F8 /* ViewController.m in Sources */,
 				CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */,
+				CBB262F4176A4CBD00D3F792 /* CarFactory.m in Sources */,
+				CBB262F7176A4CFF00D3F792 /* BaseCar.m in Sources */,
+				CBB262FD176A4E8700D3F792 /* ChevyCar.m in Sources */,
+				CBB26300176A4EC900D3F792 /* FordCar.m in Sources */,
+				CBB26303176A4F1800D3F792 /* DodgeCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
