@@ -19,7 +19,7 @@ typedef enum {
 } carEnum;
 
 //Data members for Model, Engine Size, and Horsepower
-@property NSString *carModel;
+@property(nonatomic, strong) NSString *carModel;
 @property int engineSize;
 @property int horsePower;
 

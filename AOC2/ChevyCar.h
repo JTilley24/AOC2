@@ -23,7 +23,7 @@ typedef enum {
 //Data members for number of Exhaust pipes, Diameter of pipes, and Sound
 @property int exhaustPipes;
 @property int exhaustDiameter;
-@property NSString *exhaustSound;
+@property(nonatomic, strong) NSString *exhaustSound;
 
 
 -(void)horsePowerRating;

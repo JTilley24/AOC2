@@ -11,15 +11,16 @@
 
 @interface ViewController : UIViewController
 {
-    NSString *textResults;
-    int multiplier;
-    NSString *carMake;
     IBOutlet UIButton *chevyButton;
     IBOutlet UIButton *fordButton;
     IBOutlet UIButton *dodgeButton;
     IBOutlet UITextField *textOutput;
     IBOutlet UISegmentedControl *backgroundSegment;
     IBOutlet UIStepper *stepper;
+    NSString *textResults;
+    int multiplier;
+    int baseHorsepower;
+    NSString *carMake;
 }
 
 -(IBAction)onOpen:(id)sender;

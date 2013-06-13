@@ -12,7 +12,7 @@
 
 //Data members for Spark Plus and Edition of car for Torque rating
 @property int sparkPlugs;
-@property NSString *carEdition;
+@property(nonatomic, strong) NSString *carEdition;
 @property int torquePounds;
 
 -(void)horsePowerRating;

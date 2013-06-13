@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad
 {
-        
+    multiplier = 1;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -52,8 +52,8 @@
             [camaroCar setCarModel:@"Camaro"];
             [camaroCar horsePowerRating];
         }
-        multiplier =  1;
         carMake = @"Chevy";
+        baseHorsepower = camaroCar.horsePower;
         textResults = [[NSString alloc] initWithFormat:@"%d %@ cars", multiplier, carMake];
         textOutput.text = textResults;
         chevyButton.enabled = false;
@@ -63,19 +63,45 @@
         
     }else if(button.tag == 1)
     {
-        textOutput.text = @"Ford";
+        FordCar *mustangCar = (FordCar*)[CarFactory createNewCar:FORD];
+        [mustangCar setTransType:5];
+        
+        if(mustangCar != nil)
+        {
+            [mustangCar setEngineSize:302];
+            [mustangCar setCarModel:@"Mustang"];
+            [mustangCar horsePowerRating];
+        }
+        carMake = @"Ford";
+        baseHorsepower = mustangCar.horsePower;
+        textResults = [[NSString alloc] initWithFormat:@"%d %@ cars", multiplier, carMake];
+        textOutput.text = textResults;
         fordButton.enabled = false;
         chevyButton.enabled = true;
         dodgeButton.enabled = true;
     }else if(button.tag == 2)
     {
-        textOutput.text = @"Dodge";
+        DodgeCar *chargerCar = (DodgeCar*)[CarFactory createNewCar:DODGE];
+        [chargerCar setCarEdition:@"RT"];
+        
+        if(chargerCar != nil)
+        {
+            [chargerCar setEngineSize:360];
+            [chargerCar setCarModel:@"Charger"];
+            [chargerCar horsePowerRating];
+        }
+        carMake = @"Dodge";
+        baseHorsepower = chargerCar.horsePower;
+        textResults = [[NSString alloc] initWithFormat:@"%d %@ cars", multiplier, carMake];
+        textOutput.text = textResults;
         dodgeButton.enabled = false;
         chevyButton.enabled = true;
         fordButton.enabled = true;
-    }else
+    }else if(button.tag == 3)
     {
-    
+        int calcResults = baseHorsepower * multiplier;
+        textResults = [[NSString alloc] initWithFormat:@"%d %@ cars have %d hp.", multiplier, carMake, calcResults];
+        textOutput.text = textResults;
     }
 }
 
