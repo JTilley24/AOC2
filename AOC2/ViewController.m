@@ -1,9 +1,8 @@
-//Justin Tilley
-//AOC2 Project 1
+//
 //  ViewController.m
 //  AOC2
 //
-//  Created by Justin Tilley on 6/5/13.
+//  Created by Justin Tilley on 6/12/13.
 //  Copyright (c) 2013 Justin Tilley. All rights reserved.
 //
 
@@ -17,87 +16,6 @@
 
 - (void)viewDidLoad
 {
-    //Create new CHEVY object with factory
-    chevyCar *camaroCar = (chevyCar*)[carFactory createNewCar:CHEVY];
-    [camaroCar setExhaustPipes:2];
-    
-    if(camaroCar != nil)
-    {
-        [camaroCar setEngineSize:350];
-        [camaroCar setCarModel:@"Camaro"];
-        [camaroCar horsePowerRating];
-        
-        //Add Labels for CHEVY
-        NSString *chevyResults1 = [[NSString alloc] initWithFormat:@"The Chevy %@ has a %d cuin engine with %d horsepower.", camaroCar.carModel, camaroCar.engineSize, camaroCar.horsePower];
-        
-        chevyLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-        chevyLabel1.numberOfLines = 2;
-        chevyLabel1.text = chevyResults1;
-        chevyLabel1.textColor = [UIColor redColor];
-        [self.view addSubview:chevyLabel1];
-        
-        chevyLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 55, 320, 50)];
-        chevyLabel2.numberOfLines = 2;
-        chevyLabel2.text = camaroCar.exhaustSound;
-        chevyLabel2.textColor = [UIColor redColor];
-        [self.view addSubview:chevyLabel2];
-     }
-    
-    //Create new FORD object with factory
-    fordCar *mustangCar = (fordCar*)[carFactory createNewCar:FORD];
-    [mustangCar setTransType:5];
-    
-    if(mustangCar != nil)
-    {
-        [mustangCar setEngineSize:302];
-        [mustangCar setCarModel:@"Mustang"];
-        [mustangCar horsePowerRating];
-        
-        //Add Labels for FORD
-        NSString *fordResults1 = [[NSString alloc] initWithFormat:@"The Ford %@ has a %d cuin enigne with %d horsepower.", mustangCar.carModel, mustangCar.engineSize, mustangCar.horsePower ];
-        NSString *fordResults2 = [[NSString alloc] initWithFormat:@"The top speed of the car is %d mph.", mustangCar.topSpeed];
-        
-        fordLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 110, 320, 50)];
-        fordLabel1.numberOfLines = 2;
-        fordLabel1.text = fordResults1;
-        fordLabel1.textColor = [UIColor blueColor];
-        [self.view addSubview:fordLabel1];
-        
-        fordLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 165, 320, 50)];
-        fordLabel2.numberOfLines = 2;
-        fordLabel2.text = fordResults2;
-        fordLabel2.textColor = [UIColor blueColor];
-        [self.view addSubview:fordLabel2];
-    }
-    
-    //Create new DODGE object with factory
-    dodgeCar *chargerCar = (dodgeCar*)[carFactory createNewCar:DODGE];
-    [chargerCar setCarEdition:@"RT"];
-    
-    if(chargerCar != nil)
-    {
-        [chargerCar setEngineSize:360];
-        [chargerCar setCarModel:@"Charger"];
-        [chargerCar horsePowerRating];
-        
-        //Add Lables for DODGE
-        NSString *dodgeResults1 = [[NSString alloc] initWithFormat:@"The Dodge %@ has a %d cuin engine with %d horsepower.", chargerCar.carModel, chargerCar.engineSize, chargerCar.horsePower];
-        
-        NSString *dodgeResults2 = [[NSString alloc] initWithFormat:@"The Torque rating of the engine is %d ftlbs.", chargerCar.torquePounds];
-        
-        dodgeLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 50)];
-        dodgeLabel1.numberOfLines = 2;
-        dodgeLabel1.text = dodgeResults1;
-        dodgeLabel1.textColor = [UIColor purpleColor];
-        [self.view addSubview:dodgeLabel1];
-        
-        dodgeLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 275, 320, 50)];
-        dodgeLabel2.numberOfLines = 2;
-        dodgeLabel2.text = dodgeResults2;
-        dodgeLabel2.textColor = [UIColor purpleColor];
-        [self.view addSubview:dodgeLabel2];
-    }
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
