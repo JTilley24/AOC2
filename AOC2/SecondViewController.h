@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  AOC2
 //
 //  Created by Justin Tilley on 6/12/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
--(IBAction)onClick:(id)sender;
+@interface SecondViewController : UIViewController
 
 @end

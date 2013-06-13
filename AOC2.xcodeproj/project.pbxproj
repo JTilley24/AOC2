@@ -18,6 +18,8 @@
 		CB4E835E17695847002F75F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4E835D17695847002F75F8 /* Default-568h@2x.png */; };
 		CB4E836117695847002F75F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E836017695847002F75F8 /* ViewController.m */; };
 		CB4E836417695847002F75F8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836217695847002F75F8 /* ViewController.xib */; };
+		CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836A17695C66002F75F8 /* SecondView.xib */; };
+		CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E836D17695CCF002F75F8 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		CB4E835F17695847002F75F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CB4E836017695847002F75F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB4E836317695847002F75F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CB4E836A17695C66002F75F8 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		CB4E836C17695CCF002F75F8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CB4E836D17695CCF002F75F8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				CB4E836017695847002F75F8 /* ViewController.m */,
 				CB4E836217695847002F75F8 /* ViewController.xib */,
 				CB4E834E17695847002F75F8 /* Supporting Files */,
+				CB4E836A17695C66002F75F8 /* SecondView.xib */,
+				CB4E836C17695CCF002F75F8 /* SecondViewController.h */,
+				CB4E836D17695CCF002F75F8 /* SecondViewController.m */,
 			);
 			path = AOC2;
 			sourceTree = "<group>";
@@ -163,6 +171,7 @@
 				CB4E835C17695847002F75F8 /* Default@2x.png in Resources */,
 				CB4E835E17695847002F75F8 /* Default-568h@2x.png in Resources */,
 				CB4E836417695847002F75F8 /* ViewController.xib in Resources */,
+				CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +185,7 @@
 				CB4E835417695847002F75F8 /* main.m in Sources */,
 				CB4E835817695847002F75F8 /* AppDelegate.m in Sources */,
 				CB4E836117695847002F75F8 /* ViewController.m in Sources */,
+				CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +306,7 @@
 				CB4E836917695847002F75F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
