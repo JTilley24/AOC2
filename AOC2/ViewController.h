@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UIButton *chevyButton;
+    IBOutlet UIButton *fordButton;
+    IBOutlet UIButton *dodgeButton;
+}
 
+-(IBAction)onOpen:(id)sender;
 -(IBAction)onClick:(id)sender;
 
 @end
