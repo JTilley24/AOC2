@@ -28,8 +28,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Open Second View
 -(IBAction)onOpen:(id)sender
 {
+    
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if(secondView != nil)
     {
@@ -38,11 +40,13 @@
 
 }
 
+//Click action for Buttons
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
     if(button.tag == 0)
     {
+        //Chevy Class
         ChevyCar *camaroCar = (ChevyCar*)[CarFactory createNewCar:CHEVY];
         [camaroCar setExhaustPipes:2];
         
@@ -63,6 +67,7 @@
         
     }else if(button.tag == 1)
     {
+        //Ford Class
         FordCar *mustangCar = (FordCar*)[CarFactory createNewCar:FORD];
         [mustangCar setTransType:5];
         
@@ -81,6 +86,7 @@
         dodgeButton.enabled = true;
     }else if(button.tag == 2)
     {
+        //Dodge Class
         DodgeCar *chargerCar = (DodgeCar*)[CarFactory createNewCar:DODGE];
         [chargerCar setCarEdition:@"RT"];
         
@@ -99,12 +105,14 @@
         fordButton.enabled = true;
     }else if(button.tag == 3)
     {
+        //Calculation Button method and output
         int calcResults = baseHorsepower * multiplier;
         textResults = [[NSString alloc] initWithFormat:@"%d %@ cars have %d hp.", multiplier, carMake, calcResults];
         textOutput.text = textResults;
     }
 }
 
+//Background Color segment control
 -(IBAction)onChange:(id)sender
 {
     backgroundSegment = (UISegmentedControl*)sender;
@@ -126,6 +134,7 @@
     }
 }
 
+//Stepper action and output
 -(IBAction)onStep:(id)sender
 {
     stepper = (UIStepper*)sender;

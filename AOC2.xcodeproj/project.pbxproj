@@ -25,6 +25,9 @@
 		CBB262FD176A4E8700D3F792 /* ChevyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FC176A4E8700D3F792 /* ChevyCar.m */; };
 		CBB26300176A4EC900D3F792 /* FordCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FF176A4EC800D3F792 /* FordCar.m */; };
 		CBB26303176A4F1800D3F792 /* DodgeCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB26302176A4F1800D3F792 /* DodgeCar.m */; };
+		CBB26307176A9F5400D3F792 /* chevy.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26304176A9F5400D3F792 /* chevy.png */; };
+		CBB26308176A9F5400D3F792 /* dodge.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26305176A9F5400D3F792 /* dodge.png */; };
+		CBB26309176A9F5400D3F792 /* ford.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26306176A9F5400D3F792 /* ford.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		CBB262FF176A4EC800D3F792 /* FordCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FordCar.m; sourceTree = "<group>"; };
 		CBB26301176A4F1800D3F792 /* DodgeCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DodgeCar.h; sourceTree = "<group>"; };
 		CBB26302176A4F1800D3F792 /* DodgeCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DodgeCar.m; sourceTree = "<group>"; };
+		CBB26304176A9F5400D3F792 /* chevy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevy.png; sourceTree = "<group>"; };
+		CBB26305176A9F5400D3F792 /* dodge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dodge.png; sourceTree = "<group>"; };
+		CBB26306176A9F5400D3F792 /* ford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ford.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 		CB4E834E17695847002F75F8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CBB26304176A9F5400D3F792 /* chevy.png */,
+				CBB26305176A9F5400D3F792 /* dodge.png */,
+				CBB26306176A9F5400D3F792 /* ford.png */,
 				CB4E834F17695847002F75F8 /* AOC2-Info.plist */,
 				CB4E835017695847002F75F8 /* InfoPlist.strings */,
 				CB4E835317695847002F75F8 /* main.m */,
@@ -197,6 +206,9 @@
 				CB4E835E17695847002F75F8 /* Default-568h@2x.png in Resources */,
 				CB4E836417695847002F75F8 /* ViewController.xib in Resources */,
 				CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */,
+				CBB26307176A9F5400D3F792 /* chevy.png in Resources */,
+				CBB26308176A9F5400D3F792 /* dodge.png in Resources */,
+				CBB26309176A9F5400D3F792 /* ford.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

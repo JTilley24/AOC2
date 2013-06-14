@@ -35,6 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//Close Second View
 -(IBAction)onClose:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
