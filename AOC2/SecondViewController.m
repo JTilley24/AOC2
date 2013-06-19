@@ -2,7 +2,7 @@
 //  SecondViewController.m
 //  AOC2
 //
-//  Created by Justin Tilley on 6/12/13.
+//  Created by Justin Tilley on 6/19/13.
 //  Copyright (c) 2013 Justin Tilley. All rights reserved.
 //
 
@@ -33,12 +33,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-//Close Second View
--(IBAction)onClose:(id)sender
-{
-    [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
 @end

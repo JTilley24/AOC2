@@ -7,144 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB4E834817695847002F75F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4E834717695847002F75F8 /* UIKit.framework */; };
-		CB4E834A17695847002F75F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4E834917695847002F75F8 /* Foundation.framework */; };
-		CB4E834C17695847002F75F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4E834B17695847002F75F8 /* CoreGraphics.framework */; };
-		CB4E835217695847002F75F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB4E835017695847002F75F8 /* InfoPlist.strings */; };
-		CB4E835417695847002F75F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E835317695847002F75F8 /* main.m */; };
-		CB4E835817695847002F75F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E835717695847002F75F8 /* AppDelegate.m */; };
-		CB4E835A17695847002F75F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4E835917695847002F75F8 /* Default.png */; };
-		CB4E835C17695847002F75F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4E835B17695847002F75F8 /* Default@2x.png */; };
-		CB4E835E17695847002F75F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB4E835D17695847002F75F8 /* Default-568h@2x.png */; };
-		CB4E836117695847002F75F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E836017695847002F75F8 /* ViewController.m */; };
-		CB4E836417695847002F75F8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836217695847002F75F8 /* ViewController.xib */; };
-		CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB4E836A17695C66002F75F8 /* SecondView.xib */; };
-		CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4E836D17695CCF002F75F8 /* SecondViewController.m */; };
-		CBB262F4176A4CBD00D3F792 /* CarFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262F3176A4CBD00D3F792 /* CarFactory.m */; };
-		CBB262F7176A4CFF00D3F792 /* BaseCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262F6176A4CFF00D3F792 /* BaseCar.m */; };
-		CBB262FD176A4E8700D3F792 /* ChevyCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FC176A4E8700D3F792 /* ChevyCar.m */; };
-		CBB26300176A4EC900D3F792 /* FordCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB262FF176A4EC800D3F792 /* FordCar.m */; };
-		CBB26303176A4F1800D3F792 /* DodgeCar.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB26302176A4F1800D3F792 /* DodgeCar.m */; };
-		CBB26307176A9F5400D3F792 /* chevy.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26304176A9F5400D3F792 /* chevy.png */; };
-		CBB26308176A9F5400D3F792 /* dodge.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26305176A9F5400D3F792 /* dodge.png */; };
-		CBB26309176A9F5400D3F792 /* ford.png in Resources */ = {isa = PBXBuildFile; fileRef = CBB26306176A9F5400D3F792 /* ford.png */; };
+		CB45EAE91772758F00FD8498 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB45EAE81772758F00FD8498 /* UIKit.framework */; };
+		CB45EAEB1772758F00FD8498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB45EAEA1772758F00FD8498 /* Foundation.framework */; };
+		CB45EAED1772758F00FD8498 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB45EAEC1772758F00FD8498 /* CoreGraphics.framework */; };
+		CB45EAF31772758F00FD8498 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB45EAF11772758F00FD8498 /* InfoPlist.strings */; };
+		CB45EAF51772758F00FD8498 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB45EAF41772758F00FD8498 /* main.m */; };
+		CB45EAF91772758F00FD8498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB45EAF81772758F00FD8498 /* AppDelegate.m */; };
+		CB45EAFB1772758F00FD8498 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CB45EAFA1772758F00FD8498 /* Default.png */; };
+		CB45EAFD1772758F00FD8498 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB45EAFC1772758F00FD8498 /* Default@2x.png */; };
+		CB45EAFF1772758F00FD8498 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB45EAFE1772758F00FD8498 /* Default-568h@2x.png */; };
+		CB45EB021772758F00FD8498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB45EB011772758F00FD8498 /* ViewController.m */; };
+		CB45EB051772758F00FD8498 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB45EB031772758F00FD8498 /* ViewController.xib */; };
+		CB45EB0C177275DE00FD8498 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB45EB0B177275DE00FD8498 /* SecondView.xib */; };
+		CB45EB0F1772763900FD8498 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB45EB0E1772763900FD8498 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CB4E834417695847002F75F8 /* AOC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4E834717695847002F75F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CB4E834917695847002F75F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CB4E834B17695847002F75F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CB4E834F17695847002F75F8 /* AOC2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2-Info.plist"; sourceTree = "<group>"; };
-		CB4E835117695847002F75F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CB4E835317695847002F75F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CB4E835517695847002F75F8 /* AOC2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2-Prefix.pch"; sourceTree = "<group>"; };
-		CB4E835617695847002F75F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CB4E835717695847002F75F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB4E835917695847002F75F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CB4E835B17695847002F75F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CB4E835D17695847002F75F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CB4E835F17695847002F75F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB4E836017695847002F75F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CB4E836317695847002F75F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		CB4E836A17695C66002F75F8 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
-		CB4E836C17695CCF002F75F8 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CB4E836D17695CCF002F75F8 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		CBB262F2176A4CBD00D3F792 /* CarFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarFactory.h; sourceTree = "<group>"; };
-		CBB262F3176A4CBD00D3F792 /* CarFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarFactory.m; sourceTree = "<group>"; };
-		CBB262F5176A4CFF00D3F792 /* BaseCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCar.h; sourceTree = "<group>"; };
-		CBB262F6176A4CFF00D3F792 /* BaseCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCar.m; sourceTree = "<group>"; };
-		CBB262FB176A4E8700D3F792 /* ChevyCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChevyCar.h; sourceTree = "<group>"; };
-		CBB262FC176A4E8700D3F792 /* ChevyCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChevyCar.m; sourceTree = "<group>"; };
-		CBB262FE176A4EC800D3F792 /* FordCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FordCar.h; sourceTree = "<group>"; };
-		CBB262FF176A4EC800D3F792 /* FordCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FordCar.m; sourceTree = "<group>"; };
-		CBB26301176A4F1800D3F792 /* DodgeCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DodgeCar.h; sourceTree = "<group>"; };
-		CBB26302176A4F1800D3F792 /* DodgeCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DodgeCar.m; sourceTree = "<group>"; };
-		CBB26304176A9F5400D3F792 /* chevy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chevy.png; sourceTree = "<group>"; };
-		CBB26305176A9F5400D3F792 /* dodge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dodge.png; sourceTree = "<group>"; };
-		CBB26306176A9F5400D3F792 /* ford.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ford.png; sourceTree = "<group>"; };
+		CB45EAE51772758F00FD8498 /* AOC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB45EAE81772758F00FD8498 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CB45EAEA1772758F00FD8498 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB45EAEC1772758F00FD8498 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CB45EAF01772758F00FD8498 /* AOC2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOC2-Info.plist"; sourceTree = "<group>"; };
+		CB45EAF21772758F00FD8498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB45EAF41772758F00FD8498 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB45EAF61772758F00FD8498 /* AOC2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOC2-Prefix.pch"; sourceTree = "<group>"; };
+		CB45EAF71772758F00FD8498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB45EAF81772758F00FD8498 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB45EAFA1772758F00FD8498 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CB45EAFC1772758F00FD8498 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CB45EAFE1772758F00FD8498 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CB45EB001772758F00FD8498 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB45EB011772758F00FD8498 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB45EB041772758F00FD8498 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CB45EB0B177275DE00FD8498 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+		CB45EB0D1772763900FD8498 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CB45EB0E1772763900FD8498 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB4E834117695847002F75F8 /* Frameworks */ = {
+		CB45EAE21772758F00FD8498 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4E834817695847002F75F8 /* UIKit.framework in Frameworks */,
-				CB4E834A17695847002F75F8 /* Foundation.framework in Frameworks */,
-				CB4E834C17695847002F75F8 /* CoreGraphics.framework in Frameworks */,
+				CB45EAE91772758F00FD8498 /* UIKit.framework in Frameworks */,
+				CB45EAEB1772758F00FD8498 /* Foundation.framework in Frameworks */,
+				CB45EAED1772758F00FD8498 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CB4E833B17695847002F75F8 = {
+		CB45EADC1772758F00FD8498 = {
 			isa = PBXGroup;
 			children = (
-				CB4E834D17695847002F75F8 /* AOC2 */,
-				CB4E834617695847002F75F8 /* Frameworks */,
-				CB4E834517695847002F75F8 /* Products */,
+				CB45EAEE1772758F00FD8498 /* AOC2 */,
+				CB45EAE71772758F00FD8498 /* Frameworks */,
+				CB45EAE61772758F00FD8498 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CB4E834517695847002F75F8 /* Products */ = {
+		CB45EAE61772758F00FD8498 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E834417695847002F75F8 /* AOC2.app */,
+				CB45EAE51772758F00FD8498 /* AOC2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB4E834617695847002F75F8 /* Frameworks */ = {
+		CB45EAE71772758F00FD8498 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E834717695847002F75F8 /* UIKit.framework */,
-				CB4E834917695847002F75F8 /* Foundation.framework */,
-				CB4E834B17695847002F75F8 /* CoreGraphics.framework */,
+				CB45EAE81772758F00FD8498 /* UIKit.framework */,
+				CB45EAEA1772758F00FD8498 /* Foundation.framework */,
+				CB45EAEC1772758F00FD8498 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB4E834D17695847002F75F8 /* AOC2 */ = {
+		CB45EAEE1772758F00FD8498 /* AOC2 */ = {
 			isa = PBXGroup;
 			children = (
-				CB4E835617695847002F75F8 /* AppDelegate.h */,
-				CB4E835717695847002F75F8 /* AppDelegate.m */,
-				CB4E835F17695847002F75F8 /* ViewController.h */,
-				CB4E836017695847002F75F8 /* ViewController.m */,
-				CB4E836217695847002F75F8 /* ViewController.xib */,
-				CB4E834E17695847002F75F8 /* Supporting Files */,
-				CB4E836A17695C66002F75F8 /* SecondView.xib */,
-				CB4E836C17695CCF002F75F8 /* SecondViewController.h */,
-				CB4E836D17695CCF002F75F8 /* SecondViewController.m */,
-				CBB262F2176A4CBD00D3F792 /* CarFactory.h */,
-				CBB262F3176A4CBD00D3F792 /* CarFactory.m */,
-				CBB262F5176A4CFF00D3F792 /* BaseCar.h */,
-				CBB262F6176A4CFF00D3F792 /* BaseCar.m */,
-				CBB262FB176A4E8700D3F792 /* ChevyCar.h */,
-				CBB262FC176A4E8700D3F792 /* ChevyCar.m */,
-				CBB262FE176A4EC800D3F792 /* FordCar.h */,
-				CBB262FF176A4EC800D3F792 /* FordCar.m */,
-				CBB26301176A4F1800D3F792 /* DodgeCar.h */,
-				CBB26302176A4F1800D3F792 /* DodgeCar.m */,
+				CB45EAF71772758F00FD8498 /* AppDelegate.h */,
+				CB45EAF81772758F00FD8498 /* AppDelegate.m */,
+				CB45EB001772758F00FD8498 /* ViewController.h */,
+				CB45EB011772758F00FD8498 /* ViewController.m */,
+				CB45EB031772758F00FD8498 /* ViewController.xib */,
+				CB45EAEF1772758F00FD8498 /* Supporting Files */,
+				CB45EB0B177275DE00FD8498 /* SecondView.xib */,
+				CB45EB0D1772763900FD8498 /* SecondViewController.h */,
+				CB45EB0E1772763900FD8498 /* SecondViewController.m */,
 			);
 			path = AOC2;
 			sourceTree = "<group>";
 		};
-		CB4E834E17695847002F75F8 /* Supporting Files */ = {
+		CB45EAEF1772758F00FD8498 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBB26304176A9F5400D3F792 /* chevy.png */,
-				CBB26305176A9F5400D3F792 /* dodge.png */,
-				CBB26306176A9F5400D3F792 /* ford.png */,
-				CB4E834F17695847002F75F8 /* AOC2-Info.plist */,
-				CB4E835017695847002F75F8 /* InfoPlist.strings */,
-				CB4E835317695847002F75F8 /* main.m */,
-				CB4E835517695847002F75F8 /* AOC2-Prefix.pch */,
-				CB4E835917695847002F75F8 /* Default.png */,
-				CB4E835B17695847002F75F8 /* Default@2x.png */,
-				CB4E835D17695847002F75F8 /* Default-568h@2x.png */,
+				CB45EAF01772758F00FD8498 /* AOC2-Info.plist */,
+				CB45EAF11772758F00FD8498 /* InfoPlist.strings */,
+				CB45EAF41772758F00FD8498 /* main.m */,
+				CB45EAF61772758F00FD8498 /* AOC2-Prefix.pch */,
+				CB45EAFA1772758F00FD8498 /* Default.png */,
+				CB45EAFC1772758F00FD8498 /* Default@2x.png */,
+				CB45EAFE1772758F00FD8498 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,13 +118,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB4E834317695847002F75F8 /* AOC2 */ = {
+		CB45EAE41772758F00FD8498 /* AOC2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB4E836717695847002F75F8 /* Build configuration list for PBXNativeTarget "AOC2" */;
+			buildConfigurationList = CB45EB081772758F00FD8498 /* Build configuration list for PBXNativeTarget "AOC2" */;
 			buildPhases = (
-				CB4E834017695847002F75F8 /* Sources */,
-				CB4E834117695847002F75F8 /* Frameworks */,
-				CB4E834217695847002F75F8 /* Resources */,
+				CB45EAE11772758F00FD8498 /* Sources */,
+				CB45EAE21772758F00FD8498 /* Frameworks */,
+				CB45EAE31772758F00FD8498 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -166,86 +132,78 @@
 			);
 			name = AOC2;
 			productName = AOC2;
-			productReference = CB4E834417695847002F75F8 /* AOC2.app */;
+			productReference = CB45EAE51772758F00FD8498 /* AOC2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CB4E833C17695847002F75F8 /* Project object */ = {
+		CB45EADD1772758F00FD8498 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Justin Tilley";
 			};
-			buildConfigurationList = CB4E833F17695847002F75F8 /* Build configuration list for PBXProject "AOC2" */;
+			buildConfigurationList = CB45EAE01772758F00FD8498 /* Build configuration list for PBXProject "AOC2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CB4E833B17695847002F75F8;
-			productRefGroup = CB4E834517695847002F75F8 /* Products */;
+			mainGroup = CB45EADC1772758F00FD8498;
+			productRefGroup = CB45EAE61772758F00FD8498 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB4E834317695847002F75F8 /* AOC2 */,
+				CB45EAE41772758F00FD8498 /* AOC2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CB4E834217695847002F75F8 /* Resources */ = {
+		CB45EAE31772758F00FD8498 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4E835217695847002F75F8 /* InfoPlist.strings in Resources */,
-				CB4E835A17695847002F75F8 /* Default.png in Resources */,
-				CB4E835C17695847002F75F8 /* Default@2x.png in Resources */,
-				CB4E835E17695847002F75F8 /* Default-568h@2x.png in Resources */,
-				CB4E836417695847002F75F8 /* ViewController.xib in Resources */,
-				CB4E836B17695C66002F75F8 /* SecondView.xib in Resources */,
-				CBB26307176A9F5400D3F792 /* chevy.png in Resources */,
-				CBB26308176A9F5400D3F792 /* dodge.png in Resources */,
-				CBB26309176A9F5400D3F792 /* ford.png in Resources */,
+				CB45EAF31772758F00FD8498 /* InfoPlist.strings in Resources */,
+				CB45EAFB1772758F00FD8498 /* Default.png in Resources */,
+				CB45EAFD1772758F00FD8498 /* Default@2x.png in Resources */,
+				CB45EAFF1772758F00FD8498 /* Default-568h@2x.png in Resources */,
+				CB45EB051772758F00FD8498 /* ViewController.xib in Resources */,
+				CB45EB0C177275DE00FD8498 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB4E834017695847002F75F8 /* Sources */ = {
+		CB45EAE11772758F00FD8498 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4E835417695847002F75F8 /* main.m in Sources */,
-				CB4E835817695847002F75F8 /* AppDelegate.m in Sources */,
-				CB4E836117695847002F75F8 /* ViewController.m in Sources */,
-				CB4E836E17695CCF002F75F8 /* SecondViewController.m in Sources */,
-				CBB262F4176A4CBD00D3F792 /* CarFactory.m in Sources */,
-				CBB262F7176A4CFF00D3F792 /* BaseCar.m in Sources */,
-				CBB262FD176A4E8700D3F792 /* ChevyCar.m in Sources */,
-				CBB26300176A4EC900D3F792 /* FordCar.m in Sources */,
-				CBB26303176A4F1800D3F792 /* DodgeCar.m in Sources */,
+				CB45EAF51772758F00FD8498 /* main.m in Sources */,
+				CB45EAF91772758F00FD8498 /* AppDelegate.m in Sources */,
+				CB45EB021772758F00FD8498 /* ViewController.m in Sources */,
+				CB45EB0F1772763900FD8498 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB4E835017695847002F75F8 /* InfoPlist.strings */ = {
+		CB45EAF11772758F00FD8498 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4E835117695847002F75F8 /* en */,
+				CB45EAF21772758F00FD8498 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CB4E836217695847002F75F8 /* ViewController.xib */ = {
+		CB45EB031772758F00FD8498 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB4E836317695847002F75F8 /* en */,
+				CB45EB041772758F00FD8498 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -253,7 +211,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CB4E836517695847002F75F8 /* Debug */ = {
+		CB45EB061772758F00FD8498 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +241,7 @@
 			};
 			name = Debug;
 		};
-		CB4E836617695847002F75F8 /* Release */ = {
+		CB45EB071772758F00FD8498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +265,7 @@
 			};
 			name = Release;
 		};
-		CB4E836817695847002F75F8 /* Debug */ = {
+		CB45EB091772758F00FD8498 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -318,7 +276,7 @@
 			};
 			name = Debug;
 		};
-		CB4E836917695847002F75F8 /* Release */ = {
+		CB45EB0A1772758F00FD8498 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -332,25 +290,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB4E833F17695847002F75F8 /* Build configuration list for PBXProject "AOC2" */ = {
+		CB45EAE01772758F00FD8498 /* Build configuration list for PBXProject "AOC2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB4E836517695847002F75F8 /* Debug */,
-				CB4E836617695847002F75F8 /* Release */,
+				CB45EB061772758F00FD8498 /* Debug */,
+				CB45EB071772758F00FD8498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB4E836717695847002F75F8 /* Build configuration list for PBXNativeTarget "AOC2" */ = {
+		CB45EB081772758F00FD8498 /* Build configuration list for PBXNativeTarget "AOC2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB4E836817695847002F75F8 /* Debug */,
-				CB4E836917695847002F75F8 /* Release */,
+				CB45EB091772758F00FD8498 /* Debug */,
+				CB45EB0A1772758F00FD8498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CB4E833C17695847002F75F8 /* Project object */;
+	rootObject = CB45EADD1772758F00FD8498 /* Project object */;
 }
