@@ -32,8 +32,14 @@
     SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
     if(secondView != nil)
     {
+        secondView.delegate = self;
         [self presentViewController:secondView animated:TRUE completion:nil];
     }
-
 }
+
+-(void)DidClose:(NSString*)eventString
+{
+    eventList.text = eventString;
+}
+
 @end

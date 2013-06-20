@@ -14,6 +14,8 @@
 
 @implementation SecondViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,7 +38,7 @@
         [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
     }
     NSString *dateText = [dateFormat stringFromDate:pickerDate];
-    NSLog(@"%@", dateText);
+    newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -54,8 +56,14 @@
     {
         if(button.tag == 0)
         {
-            NSString *
+            if(delegate != nil)
+                {
+                    newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ %@", eventText.text, newDate];
+                    NSLog(@"%@",newEvent);
+                    //[delegate DidClose:newEvent];
+                }
             [self dismissViewControllerAnimated:TRUE completion:nil];
+            
         }else if(button.tag == 1)
         {
             [eventText resignFirstResponder];
@@ -73,8 +81,15 @@
         [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
     }
     NSString *dateText = [dateFormat stringFromDate:pickerDate];
-    NSLog(@"%@", dateText);
+    newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
 }
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    textField.text = @"";
+    return true;
+}
+
 
 
 @end
