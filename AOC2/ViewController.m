@@ -29,17 +29,34 @@
 }
 -(IBAction)onOpen:(id)sender
 {
-    SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
-    if(secondView != nil)
+    if([eventList.text isEqualToString:@"Events will appear here."])
     {
-        secondView.delegate = self;
-        [self presentViewController:secondView animated:TRUE completion:nil];
+        eventList.text = @"";
+        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+        if(secondView != nil)
+        {
+            secondView.delegate = self;
+            [self presentViewController:secondView animated:TRUE completion:nil];
+        }
+    }else{
+        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+        if(secondView != nil)
+        {
+            secondView.delegate = self;
+            [self presentViewController:secondView animated:TRUE completion:nil];
+        }
     }
 }
 
 -(void)DidClose:(NSString*)eventString
 {
-    eventList.text = eventString;
+    if ([eventList.text isEqual: @""]) {
+        eventList.text = eventString;
+    }else{
+        NSString *addEvent = [[NSString alloc] initWithFormat:@"%@ \n\n%@", eventList.text, eventString];
+        eventList.text = addEvent;
+    }
+    
 }
 
 @end

@@ -31,13 +31,13 @@
     [eventDate setMinimumDate:current];
     eventDate.timeZone = [NSTimeZone localTimeZone];
     NSDate *pickerDate = eventDate.date;
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    dateFormat = [[NSDateFormatter alloc] init];
     if(dateFormat != nil)
     {
         [dateFormat setDateStyle:NSDateFormatterMediumStyle];
         [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
     }
-    NSString *dateText = [dateFormat stringFromDate:pickerDate];
+    dateText = [dateFormat stringFromDate:pickerDate];
     newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -56,13 +56,18 @@
     {
         if(button.tag == 0)
         {
-            if(delegate != nil)
-                {
-                    newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ %@", eventText.text, newDate];
-                    NSLog(@"%@",newEvent);
-                    //[delegate DidClose:newEvent];
-                }
-            [self dismissViewControllerAnimated:TRUE completion:nil];
+            if(![eventText.text isEqual:@""])
+            {
+                if(delegate != nil)
+                    {
+                        newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ %@", eventText.text, newDate];
+                        [delegate DidClose:newEvent];
+                    }
+                [self dismissViewControllerAnimated:TRUE completion:nil];
+            }else{
+                UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [eventAlert show];
+            }
             
         }else if(button.tag == 1)
         {
@@ -74,13 +79,7 @@
 -(IBAction)onChange:(id)sender
 {
     NSDate *pickerDate = eventDate.date;
-    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    if(dateFormat != nil)
-    {
-        [dateFormat setDateStyle:NSDateFormatterMediumStyle];
-        [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
-    }
-    NSString *dateText = [dateFormat stringFromDate:pickerDate];
+    dateText = [dateFormat stringFromDate:pickerDate];
     newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
 }
 

@@ -22,8 +22,10 @@
     IBOutlet UIButton *closeButton;
     IBOutlet UITextField *eventText;
     IBOutlet UIDatePicker *eventDate;
+    NSString *dateText;
     NSString *newDate;
     NSString *newEvent;
+    NSDateFormatter *dateFormat;
     
 }
 
