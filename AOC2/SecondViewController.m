@@ -25,6 +25,12 @@
 
 - (void)viewDidLoad
 {
+    NSDate *current = [[NSDate alloc] init];
+    NSLog(@"%@", current.description);
+    [eventDate setMinimumDate:current];
+    eventDate.timeZone = [NSTimeZone localTimeZone];
+    NSDate *pickerDate = eventDate.date;
+    NSLog(@"%@", pickerDate.description);
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -34,5 +40,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(IBAction)onClose:(id)sender
+{
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+    
+}
+
+-(IBAction)onChange:(id)sender
+{
+
+}
+
 
 @end

@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface SecondViewController : UIViewController
+{
+    IBOutlet UIButton * saveButton;
+    IBOutlet UIButton *closeButton;
+    IBOutlet UITextField *eventText;
+    IBOutlet UIDatePicker *eventDate;
+    
+}
+
+-(IBAction)onClose:(id)sender;
+-(IBAction)onChange:(id)sender;
 
 @end
