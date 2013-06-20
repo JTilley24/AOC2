@@ -26,11 +26,17 @@
 - (void)viewDidLoad
 {
     NSDate *current = [[NSDate alloc] init];
-    NSLog(@"%@", current.description);
     [eventDate setMinimumDate:current];
     eventDate.timeZone = [NSTimeZone localTimeZone];
     NSDate *pickerDate = eventDate.date;
-    NSLog(@"%@", pickerDate.description);
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    if(dateFormat != nil)
+    {
+        [dateFormat setDateStyle:NSDateFormatterMediumStyle];
+        [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
+    }
+    NSString *dateText = [dateFormat stringFromDate:pickerDate];
+    NSLog(@"%@", dateText);
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -41,15 +47,33 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)onClose:(id)sender
+-(IBAction)onClick:(id)sender
 {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    
+    UIButton *button = (UIButton*)sender;
+    if(button != nil)
+    {
+        if(button.tag == 0)
+        {
+            NSString *
+            [self dismissViewControllerAnimated:TRUE completion:nil];
+        }else if(button.tag == 1)
+        {
+            [eventText resignFirstResponder];
+        }
+    }
 }
 
 -(IBAction)onChange:(id)sender
 {
-
+    NSDate *pickerDate = eventDate.date;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    if(dateFormat != nil)
+    {
+        [dateFormat setDateStyle:NSDateFormatterMediumStyle];
+        [dateFormat setTimeStyle:NSDateFormatterMediumStyle];
+    }
+    NSString *dateText = [dateFormat stringFromDate:pickerDate];
+    NSLog(@"%@", dateText);
 }
 
 

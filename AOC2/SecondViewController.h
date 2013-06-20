@@ -17,7 +17,7 @@
     
 }
 
--(IBAction)onClose:(id)sender;
+-(IBAction)onClick:(id)sender;
 -(IBAction)onChange:(id)sender;
 
 @end
