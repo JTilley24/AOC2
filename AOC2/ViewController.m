@@ -1,4 +1,5 @@
-//
+//Justin Tilley
+//AOC2 Project 3
 //  ViewController.m
 //  AOC2
 //
@@ -27,8 +28,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//Open Second View
 -(IBAction)onOpen:(id)sender
 {
+    //Check for inital Add Event
     if([eventList.text isEqualToString:@"Events will appear here."])
     {
         eventList.text = @"";
@@ -48,6 +52,7 @@
     }
 }
 
+//Add Event content from Second View to Event List on First View
 -(void)DidClose:(NSString*)eventString
 {
     if ([eventList.text isEqual: @""]) {

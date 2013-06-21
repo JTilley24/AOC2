@@ -1,4 +1,5 @@
-//
+//Justin Tilley
+//AOC2 Project 3
 //  SecondViewController.m
 //  AOC2
 //
@@ -27,6 +28,7 @@
 
 - (void)viewDidLoad
 {
+    //Format Date
     NSDate *current = [[NSDate alloc] init];
     [eventDate setMinimumDate:current];
     eventDate.timeZone = [NSTimeZone localTimeZone];
@@ -49,6 +51,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+//On Click for Save and Close Keyboard Button
 -(IBAction)onClick:(id)sender
 {
     UIButton *button = (UIButton*)sender;
@@ -56,33 +59,37 @@
     {
         if(button.tag == 0)
         {
-            if(![eventText.text isEqual:@""])
+            //Check for Text Field 
+            if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
             {
                 if(delegate != nil)
                     {
-                        newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ %@", eventText.text, newDate];
+                        //Add Event text and Date to Event List
+                        newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
                         [delegate DidClose:newEvent];
                     }
                 [self dismissViewControllerAnimated:TRUE completion:nil];
             }else{
-                UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                //Alert for required Text Field
+                UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please Enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [eventAlert show];
             }
             
         }else if(button.tag == 1)
         {
+            //Dismiss Keyboard
             [eventText resignFirstResponder];
         }
     }
 }
-
+//Date Picker change
 -(IBAction)onChange:(id)sender
 {
     NSDate *pickerDate = eventDate.date;
     dateText = [dateFormat stringFromDate:pickerDate];
     newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
 }
-
+//Clear Text Field when editing
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
     textField.text = @"";

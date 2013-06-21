@@ -1,4 +1,5 @@
-//
+//Justin Tilley
+//AOC2 Project 3
 //  ViewController.h
 //  AOC2
 //
