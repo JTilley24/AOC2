@@ -1,5 +1,5 @@
 //Justin Tilley
-//AOC2 Project 3
+//AOC2 Project 4
 //  ViewController.h
 //  AOC2
 //
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "SecondViewController.h"
 
-@interface ViewController : UIViewController <SecondViewDelegate>
+@interface ViewController : UIViewController
 {
     IBOutlet UITextView *eventList;
 }

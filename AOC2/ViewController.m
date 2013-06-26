@@ -1,5 +1,5 @@
 //Justin Tilley
-//AOC2 Project 3
+//AOC2 Project 4
 //  ViewController.m
 //  AOC2
 //
@@ -39,14 +39,12 @@
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
         if(secondView != nil)
         {
-            secondView.delegate = self;
             [self presentViewController:secondView animated:TRUE completion:nil];
         }
     }else{
         SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
         if(secondView != nil)
         {
-            secondView.delegate = self;
             [self presentViewController:secondView animated:TRUE completion:nil];
         }
     }

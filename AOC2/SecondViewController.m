@@ -1,5 +1,5 @@
 //Justin Tilley
-//AOC2 Project 3
+//AOC2 Project 4
 //  SecondViewController.m
 //  AOC2
 //
@@ -15,7 +15,6 @@
 
 @implementation SecondViewController
 
-@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -62,17 +61,16 @@
             //Check for Text Field 
             if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
             {
-                if(delegate != nil)
+               /* if(delegate != nil)
                     {
                         //Add Event text and Date to Event List
                         newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
-                        [delegate DidClose:newEvent];
                     }
                 [self dismissViewControllerAnimated:TRUE completion:nil];
             }else{
                 //Alert for required Text Field
                 UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please Enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [eventAlert show];
+                [eventAlert show];*/
             }
             
         }else if(button.tag == 1)

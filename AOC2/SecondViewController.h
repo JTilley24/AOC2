@@ -1,5 +1,5 @@
 //Justin Tilley
-//AOC2 Project 3
+//AOC2 Project 4
 //  SecondViewController.h
 //  AOC2
 //
@@ -9,16 +9,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol SecondViewDelegate <NSObject>
-
-@required
--(void)DidClose:(NSString*)eventString;
-
-@end
 
 @interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
-    id<SecondViewDelegate> delegate;
     IBOutlet UIButton * saveButton;
     IBOutlet UIButton *closeButton;
     IBOutlet UITextField *eventText;
@@ -33,6 +26,5 @@
 -(IBAction)onClick:(id)sender;
 -(IBAction)onChange:(id)sender;
 
-@property (strong) id<SecondViewDelegate> delegate;
 
 @end
