@@ -12,14 +12,15 @@
 
 @interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
-    IBOutlet UIButton * saveButton;
-    IBOutlet UIButton *closeButton;
     IBOutlet UITextField *eventText;
     IBOutlet UIDatePicker *eventDate;
     NSString *dateText;
     NSString *newDate;
     NSString *newEvent;
     NSDateFormatter *dateFormat;
+    
+    IBOutlet UILabel *saveLabel;
+    UISwipeGestureRecognizer *leftSwipe;
     
 }
 

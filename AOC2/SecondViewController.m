@@ -27,6 +27,10 @@
 
 - (void)viewDidLoad
 {
+    leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+    [saveLabel addGestureRecognizer:leftSwipe];
+    
     //Format Date
     NSDate *current = [[NSDate alloc] init];
     [eventDate setMinimumDate:current];
@@ -50,6 +54,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
+    {
+         newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
+        [self dismissViewControllerAnimated:TRUE completion:nil];
+        
+    }else{
+        //Alert for required Text Field
+        UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please Enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [eventAlert show];
+    }
+
+    
+
+    
+}
+
 //On Click for Save and Close Keyboard Button
 -(IBAction)onClick:(id)sender
 {
@@ -58,20 +80,6 @@
     {
         if(button.tag == 0)
         {
-            //Check for Text Field 
-            if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
-            {
-               /* if(delegate != nil)
-                    {
-                        //Add Event text and Date to Event List
-                        newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
-                    }
-                [self dismissViewControllerAnimated:TRUE completion:nil];
-            }else{
-                //Alert for required Text Field
-                UIAlertView *eventAlert = [[UIAlertView alloc] initWithTitle:@"Event" message: @"Please Enter Event" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [eventAlert show];*/
-            }
             
         }else if(button.tag == 1)
         {

@@ -13,6 +13,8 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UITextView *eventList;
+    IBOutlet UILabel *eventLabel;
+    UISwipeGestureRecognizer *rightSwipe;
 }
 
 -(IBAction)onOpen:(id)sender;

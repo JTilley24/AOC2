@@ -19,15 +19,41 @@
 
 - (void)viewDidLoad
 {
+    rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
+    rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [eventLabel addGestureRecognizer:rightSwipe];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
+{
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+        if([eventList.text isEqualToString:@"Events will appear here."])
+        {
+            eventList.text = @"";
+            SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+            if(secondView != nil)
+            {
+                [self presentViewController:secondView animated:TRUE completion:nil];
+            }
+        }else{
+            SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+            if(secondView != nil)
+            {
+                [self presentViewController:secondView animated:TRUE completion:nil];
+            }
+        }
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 //Open Second View
 -(IBAction)onOpen:(id)sender
