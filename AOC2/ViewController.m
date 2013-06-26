@@ -23,6 +23,14 @@
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [eventLabel addGestureRecognizer:rightSwipe];
     
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(defaults != nil)
+    {
+        NSString *eventString = [defaults objectForKey:@"event"];
+        eventList.text = eventString;
+    }
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -54,27 +62,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-//Open Second View
--(IBAction)onOpen:(id)sender
+-(IBAction)onClick:(id)sender
 {
-    //Check for inital Add Event
-    if([eventList.text isEqualToString:@"Events will appear here."])
-    {
-        eventList.text = @"";
-        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
-        if(secondView != nil)
-        {
-            [self presentViewController:secondView animated:TRUE completion:nil];
-        }
-    }else{
-        SecondViewController *secondView = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
-        if(secondView != nil)
-        {
-            [self presentViewController:secondView animated:TRUE completion:nil];
-        }
-    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if(defaults != nil)
+                     {
+                         NSString *eventString = eventList.text;
+                         [defaults setObject:eventString forKey:@"event"];
+                         [defaults synchronize];
+                     }
 }
+
 
 //Add Event content from Second View to Event List on First View
 -(void)DidClose:(NSString*)eventString

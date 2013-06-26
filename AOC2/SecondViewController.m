@@ -80,9 +80,6 @@
     {
         if(button.tag == 0)
         {
-            
-        }else if(button.tag == 1)
-        {
             //Dismiss Keyboard
             [eventText resignFirstResponder];
         }

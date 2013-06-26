@@ -13,10 +13,12 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UITextView *eventList;
+    IBOutlet UIButton *saveButton;
     IBOutlet UILabel *eventLabel;
     UISwipeGestureRecognizer *rightSwipe;
+    
 }
 
--(IBAction)onOpen:(id)sender;
+-(IBAction)onClick:(id)sender;
 
 @end

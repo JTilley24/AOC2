@@ -12,6 +12,7 @@
 
 @interface SecondViewController : UIViewController <UITextFieldDelegate>
 {
+    IBOutlet UIButton *closeButton;
     IBOutlet UITextField *eventText;
     IBOutlet UIDatePicker *eventDate;
     NSString *dateText;
