@@ -23,14 +23,15 @@
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [eventLabel addGestureRecognizer:rightSwipe];
     
-    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(defaults != nil)
     {
-        NSString *eventString = [defaults objectForKey:@"event"];
-        eventList.text = eventString;
+        eventDefault = [defaults objectForKey:@"event"];
+        if(eventDefault != nil)
+        {
+            eventList.text = eventDefault;
+        }
     }
-
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -56,6 +57,27 @@
         }
     }
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+        if([eventList.text isEqualToString:@""])
+        {
+            
+            NSString *addEvent = [[NSString alloc] initWithFormat:@"%@",[SecondViewController sharedEvent].eventString];
+            if([SecondViewController sharedEvent].eventString != nil)
+            {
+                eventList.text = addEvent;
+            }
+        }else
+        {
+            NSString *addEvent = [[NSString alloc] initWithFormat:@"%@ \n\n%@", eventList.text, [SecondViewController sharedEvent].eventString];
+            if([SecondViewController sharedEvent].eventString != nil)
+            {
+                eventList.text = addEvent;
+            }
+        }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -75,7 +97,7 @@
 
 
 //Add Event content from Second View to Event List on First View
--(void)DidClose:(NSString*)eventString
+/*-(void)DidClose:(NSString*)eventString
 {
     if ([eventList.text isEqual: @""]) {
         eventList.text = eventString;
@@ -84,6 +106,6 @@
         eventList.text = addEvent;
     }
     
-}
+}*/
 
 @end

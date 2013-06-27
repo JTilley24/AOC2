@@ -28,5 +28,9 @@
 -(IBAction)onClick:(id)sender;
 -(IBAction)onChange:(id)sender;
 
+@property (nonatomic,strong) NSString *eventString;
++(SecondViewController *)sharedEvent;
+-(id)init;
+
 
 @end

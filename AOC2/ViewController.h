@@ -16,6 +16,7 @@
     IBOutlet UIButton *saveButton;
     IBOutlet UILabel *eventLabel;
     UISwipeGestureRecognizer *rightSwipe;
+    NSString *eventDefault;
     
 }
 

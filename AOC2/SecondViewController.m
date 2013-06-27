@@ -14,7 +14,9 @@
 @end
 
 @implementation SecondViewController
+@synthesize eventString;
 
+static SecondViewController *instance = nil;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,11 +56,35 @@
     // Dispose of any resources that can be recreated.
 }
 
++(SecondViewController *)sharedEvent
+{
+    if(instance == nil)
+    {
+        instance = [[self alloc] init];
+    }
+    return instance;
+}
++(id)alloc
+{
+    instance = [super alloc];
+    return instance;
+}
+-(id)init
+{
+    if(self = [super init])
+    {
+        
+    }
+    return self;
+}
+
+
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
     {
-         newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
+        newEvent = [[NSString alloc] initWithFormat:@"New Event: %@ \n%@", eventText.text, newDate];
+        [self setEventString:newEvent];
         [self dismissViewControllerAnimated:TRUE completion:nil];
         
     }else{
@@ -98,6 +124,8 @@
     textField.text = @"";
     return true;
 }
+
+
 
 
 
