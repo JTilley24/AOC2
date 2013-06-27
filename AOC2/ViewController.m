@@ -1,5 +1,6 @@
 //Justin Tilley
 //AOC2 Project 4
+//
 //  ViewController.m
 //  AOC2
 //
@@ -19,10 +20,12 @@
 
 - (void)viewDidLoad
 {
+    //Right Swipe Gesture to Open Second View
     rightSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     rightSwipe.direction = UISwipeGestureRecognizerDirectionRight;
     [eventLabel addGestureRecognizer:rightSwipe];
     
+    //Display User Defaults
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(defaults != nil)
     {
@@ -37,6 +40,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+//When the user swipes right
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if(recognizer.direction == UISwipeGestureRecognizerDirectionRight)
@@ -58,7 +62,7 @@
         }
     }
 }
-
+//Update TextView after Second View closes
 - (void)viewWillAppear:(BOOL)animated
 {
         if([eventList.text isEqualToString:@""])
@@ -83,7 +87,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//Save the contents of TextView in User Defaults
 -(IBAction)onClick:(id)sender
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -92,6 +96,7 @@
          NSString *eventString = eventList.text;
          [defaults setObject:eventString forKey:@"event"];
          [defaults synchronize];
+         //Save Alert
          UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:@"Save" message: @"Events have been Saved." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
          [saveAlert show];
      }

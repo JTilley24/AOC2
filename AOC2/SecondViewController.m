@@ -1,5 +1,6 @@
 //Justin Tilley
 //AOC2 Project 4
+//
 //  SecondViewController.m
 //  AOC2
 //
@@ -31,6 +32,7 @@ static SecondViewController *instance = nil;
 
 - (void)viewDidLoad
 {
+    //Left Swipe Gesture to Close and Save Second View
     leftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onSwipe:)];
     leftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
     [saveLabel addGestureRecognizer:leftSwipe];
@@ -48,6 +50,7 @@ static SecondViewController *instance = nil;
     }
     dateText = [dateFormat stringFromDate:pickerDate];
     newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
@@ -80,7 +83,7 @@ static SecondViewController *instance = nil;
     return self;
 }
 
-
+//Save and Close Second View
 -(void)onSwipe:(UISwipeGestureRecognizer*)recognizer
 {
     if(![eventText.text isEqualToString: @"Enter Event"] && ![eventText.text isEqualToString: @""])
@@ -110,6 +113,7 @@ static SecondViewController *instance = nil;
         [eventText resignFirstResponder];
     }
 }
+
 //Date Picker change
 -(IBAction)onChange:(id)sender
 {
@@ -117,6 +121,7 @@ static SecondViewController *instance = nil;
     dateText = [dateFormat stringFromDate:pickerDate];
     newDate = [[NSString alloc] initWithFormat:@"%@", dateText];
 }
+
 //Clear Text Field when editing
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
