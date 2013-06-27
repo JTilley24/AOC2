@@ -15,20 +15,19 @@
     IBOutlet UIButton *closeButton;
     IBOutlet UITextField *eventText;
     IBOutlet UIDatePicker *eventDate;
+    IBOutlet UILabel *saveLabel;
+    UISwipeGestureRecognizer *leftSwipe;
     NSString *dateText;
     NSString *newDate;
     NSString *newEvent;
     NSDateFormatter *dateFormat;
-    
-    IBOutlet UILabel *saveLabel;
-    UISwipeGestureRecognizer *leftSwipe;
-    
 }
+
+@property (nonatomic,strong) NSString *eventString;
 
 -(IBAction)onClick:(id)sender;
 -(IBAction)onChange:(id)sender;
 
-@property (nonatomic,strong) NSString *eventString;
 +(SecondViewController *)sharedEvent;
 -(id)init;
 

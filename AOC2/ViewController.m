@@ -32,6 +32,7 @@
             eventList.text = eventDefault;
         }
     }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -62,7 +63,6 @@
 {
         if([eventList.text isEqualToString:@""])
         {
-            
             NSString *addEvent = [[NSString alloc] initWithFormat:@"%@",[SecondViewController sharedEvent].eventString];
             if([SecondViewController sharedEvent].eventString != nil)
             {
@@ -88,24 +88,14 @@
 {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if(defaults != nil)
-                     {
-                         NSString *eventString = eventList.text;
-                         [defaults setObject:eventString forKey:@"event"];
-                         [defaults synchronize];
-                     }
+     {
+         NSString *eventString = eventList.text;
+         [defaults setObject:eventString forKey:@"event"];
+         [defaults synchronize];
+         UIAlertView *saveAlert = [[UIAlertView alloc] initWithTitle:@"Save" message: @"Events have been Saved." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+         [saveAlert show];
+     }
 }
 
-
-//Add Event content from Second View to Event List on First View
-/*-(void)DidClose:(NSString*)eventString
-{
-    if ([eventList.text isEqual: @""]) {
-        eventList.text = eventString;
-    }else{
-        NSString *addEvent = [[NSString alloc] initWithFormat:@"%@ \n\n%@", eventList.text, eventString];
-        eventList.text = addEvent;
-    }
-    
-}*/
 
 @end

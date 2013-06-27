@@ -14,9 +14,11 @@
 @end
 
 @implementation SecondViewController
+
 @synthesize eventString;
 
 static SecondViewController *instance = nil;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -104,11 +106,8 @@ static SecondViewController *instance = nil;
     UIButton *button = (UIButton*)sender;
     if(button != nil)
     {
-        if(button.tag == 0)
-        {
-            //Dismiss Keyboard
-            [eventText resignFirstResponder];
-        }
+        //Dismiss Keyboard
+        [eventText resignFirstResponder];
     }
 }
 //Date Picker change
@@ -121,6 +120,7 @@ static SecondViewController *instance = nil;
 //Clear Text Field when editing
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
+    if([textField.text isEqualToString:@"Enter Event"])
     textField.text = @"";
     return true;
 }
